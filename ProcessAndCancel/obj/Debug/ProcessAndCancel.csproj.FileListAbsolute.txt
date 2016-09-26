@@ -1,0 +1,9 @@
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\bin\Debug\ProcessAndCancel.exe.config
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\bin\Debug\ProcessAndCancel.exe
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\bin\Debug\ProcessAndCancel.pdb
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.csprojResolveAssemblyReference.cache
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.ProcessAndCancel.resources
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.Properties.Resources.resources
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.csproj.GenerateResource.Cache
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.exe
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.pdb
