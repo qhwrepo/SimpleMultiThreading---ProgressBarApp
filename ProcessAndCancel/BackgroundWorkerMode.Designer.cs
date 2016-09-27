@@ -1,6 +1,6 @@
 ﻿namespace ProcessAndCancel
 {
-    partial class ProcessAndCancel
+    partial class BackgroundWorkerMode
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.btnChangeMode = new System.Windows.Forms.Button();
             this.btnProcess = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.lblInstruction = new System.Windows.Forms.Label();
-            this.btnChangeMode = new System.Windows.Forms.Button();
             this.lblPercent = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // progressBar
+            // btnChangeMode
             // 
-            this.progressBar.Location = new System.Drawing.Point(12, 163);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(317, 23);
-            this.progressBar.TabIndex = 0;
+            this.btnChangeMode.Location = new System.Drawing.Point(243, 44);
+            this.btnChangeMode.Name = "btnChangeMode";
+            this.btnChangeMode.Size = new System.Drawing.Size(86, 23);
+            this.btnChangeMode.TabIndex = 5;
+            this.btnChangeMode.Text = "Change Mode";
+            this.btnChangeMode.UseVisualStyleBackColor = true;
+            this.btnChangeMode.Click += new System.EventHandler(this.btnChangeMode_Click);
             // 
             // btnProcess
             // 
             this.btnProcess.Location = new System.Drawing.Point(243, 80);
             this.btnProcess.Name = "btnProcess";
             this.btnProcess.Size = new System.Drawing.Size(86, 23);
-            this.btnProcess.TabIndex = 1;
+            this.btnProcess.TabIndex = 6;
             this.btnProcess.Text = "Process";
             this.btnProcess.UseVisualStyleBackColor = true;
             this.btnProcess.Click += new System.EventHandler(this.btnProcess_Click);
@@ -58,10 +61,17 @@
             this.btnCancel.Location = new System.Drawing.Point(243, 117);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(86, 23);
-            this.btnCancel.TabIndex = 2;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(12, 163);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(317, 23);
+            this.progressBar.TabIndex = 8;
             // 
             // lblInstruction
             // 
@@ -69,18 +79,8 @@
             this.lblInstruction.Location = new System.Drawing.Point(13, 29);
             this.lblInstruction.Name = "lblInstruction";
             this.lblInstruction.Size = new System.Drawing.Size(95, 12);
-            this.lblInstruction.TabIndex = 3;
+            this.lblInstruction.TabIndex = 9;
             this.lblInstruction.Text = "ToBeInitialized";
-            // 
-            // btnChangeMode
-            // 
-            this.btnChangeMode.Location = new System.Drawing.Point(243, 44);
-            this.btnChangeMode.Name = "btnChangeMode";
-            this.btnChangeMode.Size = new System.Drawing.Size(86, 23);
-            this.btnChangeMode.TabIndex = 4;
-            this.btnChangeMode.Text = "Change Mode";
-            this.btnChangeMode.UseVisualStyleBackColor = true;
-            this.btnChangeMode.Click += new System.EventHandler(this.btnChangeMode_Click);
             // 
             // lblPercent
             // 
@@ -88,25 +88,23 @@
             this.lblPercent.Location = new System.Drawing.Point(13, 140);
             this.lblPercent.Name = "lblPercent";
             this.lblPercent.Size = new System.Drawing.Size(59, 12);
-            this.lblPercent.TabIndex = 11;
+            this.lblPercent.TabIndex = 10;
             this.lblPercent.Text = "Progress:";
             // 
-            // ProcessAndCancel
+            // BackgroundWorkerMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 198);
             this.Controls.Add(this.lblPercent);
-            this.Controls.Add(this.btnChangeMode);
             this.Controls.Add(this.lblInstruction);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnProcess);
-            this.Controls.Add(this.progressBar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "ProcessAndCancel";
+            this.Controls.Add(this.btnChangeMode);
+            this.Name = "BackgroundWorkerMode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Normal Mode";
+            this.Text = "Background Worker Mode";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,12 +112,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Button btnChangeMode;
         private System.Windows.Forms.Button btnProcess;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label lblInstruction;
-        private System.Windows.Forms.Button btnChangeMode;
         private System.Windows.Forms.Label lblPercent;
     }
 }
-

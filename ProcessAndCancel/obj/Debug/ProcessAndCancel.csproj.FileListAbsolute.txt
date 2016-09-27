@@ -7,3 +7,4 @@ E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCan
 E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.csproj.GenerateResource.Cache
 E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.exe
 E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.pdb
+E:\SoftwareDevelopment\ProcessAndCancel\ProcessAndCancel\obj\Debug\ProcessAndCancel.BackgroundWorkerMode.resources

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackgroundWorkerMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackgroundWorkerMode.Designer.cs">
+      <DependentUpon>BackgroundWorkerMode.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProcessAndCancel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BackgroundWorkerMode.resx">
+      <DependentUpon>BackgroundWorkerMode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProcessAndCancel.resx">
       <DependentUpon>ProcessAndCancel.cs</DependentUpon>
     </EmbeddedResource>
