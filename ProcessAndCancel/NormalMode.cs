@@ -68,6 +68,5 @@ namespace ProcessAndCancel
             MessageBox.Show("BackgroundWorker Mode");  
         }
 
-       
     }
 }

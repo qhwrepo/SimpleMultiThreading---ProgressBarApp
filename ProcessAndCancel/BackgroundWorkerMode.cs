@@ -87,5 +87,10 @@ namespace ProcessAndCancel
         {
             bgWorker.CancelAsync();
         }
+
+        private void BackgroundWorkerMode_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

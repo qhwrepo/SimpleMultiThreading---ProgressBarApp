@@ -105,6 +105,7 @@
             this.Name = "BackgroundWorkerMode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BackgroundWorker Mode";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BackgroundWorkerMode_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
