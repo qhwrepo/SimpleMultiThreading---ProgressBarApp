@@ -104,7 +104,7 @@
             this.Controls.Add(this.btnChangeMode);
             this.Name = "BackgroundWorkerMode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Background Worker Mode";
+            this.Text = "BackgroundWorker Mode";
             this.ResumeLayout(false);
             this.PerformLayout();
 

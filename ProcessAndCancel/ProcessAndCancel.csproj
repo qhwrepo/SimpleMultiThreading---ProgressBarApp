@@ -52,19 +52,19 @@
     <Compile Include="BackgroundWorkerMode.Designer.cs">
       <DependentUpon>BackgroundWorkerMode.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProcessAndCancel.cs">
+    <Compile Include="NormalMode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProcessAndCancel.Designer.cs">
-      <DependentUpon>ProcessAndCancel.cs</DependentUpon>
+    <Compile Include="NormalMode.Designer.cs">
+      <DependentUpon>NormalMode.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BackgroundWorkerMode.resx">
       <DependentUpon>BackgroundWorkerMode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProcessAndCancel.resx">
-      <DependentUpon>ProcessAndCancel.cs</DependentUpon>
+    <EmbeddedResource Include="NormalMode.resx">
+      <DependentUpon>NormalMode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

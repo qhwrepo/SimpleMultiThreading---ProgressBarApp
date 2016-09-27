@@ -1,6 +1,6 @@
 ﻿namespace ProcessAndCancel
 {
-    partial class ProcessAndCancel
+    partial class NormalMode
     {
         /// <summary>
         /// Required designer variable.

@@ -16,7 +16,7 @@ namespace ProcessAndCancel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProcessAndCancel());
+            Application.Run(new NormalMode());
         }
     }
 }

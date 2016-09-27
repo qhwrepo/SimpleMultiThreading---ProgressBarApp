@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProcessAndCancel
@@ -21,6 +15,7 @@ namespace ProcessAndCancel
             InitializeComponent();
             lblInstruction.Text = "Instruction:\n\nBackgroundWorker Mode.\n\nPress Process Button To Start\n\nPress Cancel Button To Stop";
             this.Owner = parent;
+            btnCancel.Enabled = false;
 
             //Set BackgroundWorker properties
             bgWorker.WorkerReportsProgress = true;
@@ -40,6 +35,10 @@ namespace ProcessAndCancel
             else
                 MessageBox.Show("Process completed normally in BackgroundWorker Mode.");
             progressBar.Value = 0;
+            lblPercent.Text = "Progress: ";
+            btnChangeMode.Enabled = true;
+            btnCancel.Enabled = false;
+            btnProcess.Enabled = true;
         }
 
         private void ProgressChanged_Handler(object sender, ProgressChangedEventArgs args)
@@ -79,6 +78,9 @@ namespace ProcessAndCancel
         {
             if (!bgWorker.IsBusy)
                 bgWorker.RunWorkerAsync();
+            btnChangeMode.Enabled = false;
+            btnProcess.Enabled = false;
+            btnCancel.Enabled = true;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

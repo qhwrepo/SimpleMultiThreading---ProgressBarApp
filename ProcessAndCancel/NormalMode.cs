@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
 namespace ProcessAndCancel
 {
-    public partial class ProcessAndCancel : Form
+    public partial class NormalMode : Form
     {
         CancellationTokenSource _cancellationTokenSource;
         CancellationToken _cancellationToken;
-        public ProcessAndCancel()
+        public NormalMode()
         {
             InitializeComponent();
             lblInstruction.Text = "Instruction:\n\nNormal Mode.\n\nPress Process Button To Start\n\nPress Cancel Button To Stop";
@@ -26,6 +20,7 @@ namespace ProcessAndCancel
         {
             btnProcess.Enabled = false;
             btnCancel.Enabled = true;
+            btnChangeMode.Enabled = false;
             _cancellationTokenSource = new CancellationTokenSource();
             _cancellationToken = _cancellationTokenSource.Token;
 
@@ -57,25 +52,20 @@ namespace ProcessAndCancel
             lblPercent.Text = "Progress: ";
             btnCancel.Enabled = false;
             btnProcess.Enabled = true;
+            btnChangeMode.Enabled = true;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             _cancellationTokenSource.Cancel();
-            btnCancel.Enabled = false;
-            btnProcess.Enabled = true;
-            
-
         }
 
         private void btnChangeMode_Click(object sender, EventArgs e)
         {
-            
             BackgroundWorkerMode bwm = new BackgroundWorkerMode(this);
             this.Hide();
             bwm.Show();
-            MessageBox.Show("BackgroundWorker Mode");
-            
+            MessageBox.Show("BackgroundWorker Mode");  
         }
 
        
